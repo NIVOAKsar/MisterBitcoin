@@ -1,0 +1,66 @@
+.wrapper {
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: 90%;
+}
+
+@media screen and (min-width: 500px){
+    .wrapper{
+        margin: auto;
+        width:450px;
+    }
+}
+
+/***** HELPERS *****/
+
+.grid {
+    display: grid;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+.jct-evenly {
+    justify-content: space-evenly;
+}
+.jct-around {
+    justify-content: space-around;
+}
+.jc-between {
+    justify-content: space-between;
+}
+.jct-start {
+    justify-content: flex-start;
+}
+.jct-center {
+    justify-content: center;
+}
+.jct-end {
+    justify-content: flex-end;
+}
+.aln-start {
+    align-items: flex-start;
+}
+.aln-center {
+    align-items: center;
+}
+.aln-end {
+    align-items: flex-end;
+}
+.clean-list {
+    list-style-type: none;
+}
+.clean-link{
+text-decoration: none;
+}
+
+/***** FONTS *****/
+
+// @font-face{
+//     font-family: lato-reg;
+//     src:url("./assets/fonts/Lato-Regular.ttf")
+// }

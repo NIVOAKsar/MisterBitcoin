@@ -1,0 +1,325 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  // margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-size: cover;
+  background-image: url("./assets/black-theme.jpg");
+}
+
+/***** App *****/
+.App {
+    text-align: center;
+    position: relative;
+    color:white;
+    .hamburger{
+      position: fixed;
+      left:0;
+    } 
+    ul{
+      list-style: none; 
+    }
+    .link, .nav-link {
+      text-decoration: none; 
+      color:black; 
+  }
+}
+
+.main-nav {
+  background-color:white;
+  display: flex;  
+  position: fixed;
+  flex-direction: column;
+  justify-content: space-around;
+  left:0;
+  top:calc(32px + 40px);
+  height: 150px;
+  padding: 1rem 0 1rem 1rem;
+  text-align: left;
+  font-size: 1.1rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transform: translate(-100px);
+  transition: 0.3s;
+  .nav-link {
+    text-align: left;
+    margin-right:10px;
+    transition: color 0.4s ease;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  .isActive {
+    font-weight: bold;
+    color:rgb(44, 211, 211) !important;
+  }
+  .partial{
+    display: none;
+  }
+}
+
+.show{
+  transform: translate(0)
+}
+
+/***** Signup Page *****/
+.signup-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  input{
+    padding: 10px;
+    border-style:none;
+    box-shadow: 
+     0 10px 20px rgba(0,0,0,0.19),
+     0 6px 6px rgba(0,0,0,0.23);
+  }
+}
+
+
+
+/***** Home Page *****/
+.home-page {
+  .home-card {
+    padding: 1rem;
+    background:rgb(94, 94, 94);
+    box-shadow: 
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 15px #fff,
+    0 0 20px rgb(129, 195, 197);
+    
+   > * {
+    text-align: left;
+   }
+  }
+}
+
+
+/***** Contact Page *****/
+.contact-page{
+  .contact-header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-contact-btn{
+    margin-right: 20px;
+    &:hover{
+      transition: .3s;
+      transform: scale(1.2,1.2);
+    }
+  }
+}
+
+.contact-filter {
+  input {
+    padding: 0.6rem;
+    border-style: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+}
+
+.contact-list {
+  display: flex;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: auto;
+    li {width:100%}
+  }
+}
+  .contact-preview {
+  background-color: rgb(58, 105, 87);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  margin-bottom: 1rem;
+  height: auto;
+  border-radius: 20px;
+  img { border-radius: 50%}
+  .delete-contact-btn {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border-style: none;
+    font-size: 1.8em;
+    background-color: rgb(160, 88, 88);
+    color:#fff;
+    &:hover{
+      transition: .3s;
+      transform: scale(1.2,1.2);
+      cursor:pointer;
+    }
+  }
+}
+
+/***** Contact Details Page *****/
+.contact-details {
+  img{ border-radius: 50% }
+  .contact-details-nav{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width:50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    img:hover{
+      transition: .3s;
+      transform: scale(1.2,1.2);
+    }
+  }
+
+.contact-details-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(59, 59, 59);
+    color:rgb(255, 255, 255);
+    width: 90%;
+    max-width: 530px;
+    padding:20px;
+    margin:auto;
+    border-radius: 20px;
+    font-weight: bold;
+    .contact-credentials {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      label{display: block}
+    }
+    img { order:-1 }
+  }
+
+  .transfer-funds {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    background-color: rgb(59, 59, 59);
+    width: 90%;
+    max-width: 530px;
+    padding:20px;
+    margin:auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    form {
+      *:not(:first-child){
+        margin-top: 15px;
+      }
+      input {
+        padding: 0.6rem;
+        border-style: none;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      }
+    }
+  }
+}
+.move-container{
+  background-color:rgb(90, 170, 170);
+  .move-card{
+  }
+}
+
+/***** Contact Edit Page *****/
+.contact-edit-card{
+  width:80vw;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(59, 59, 59);
+  form {
+    width:90%;
+    padding:10px;
+    text-align: left;
+    font-weight: bold;
+    color:#fff;
+    input{
+      width:100%;
+      padding:10px;
+      margin-top: 5px;
+      border-radius: 10px;
+      border-style: none;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  /***** App *****/
+  .App {
+    .main-nav{
+      display: block;
+      position: static;
+      text-align: right;
+      transform: translate(0);
+      height: auto;
+      background-color:transparent;
+      .link, .nav-link {
+        color:white; 
+    }
+      
+    }
+    .hamburger {
+      display:none;
+    }
+    .partial {
+      display: inline-block;
+    }
+    /***** Contact Page *****/
+    .contact-list {
+      ul{
+        justify-content: center;
+        li {width:400px}
+      }
+    }
+    /***** Contact Details Page *****/
+    .contact-details-card{
+      flex-direction: row;
+     
+      order:0;
+      .contact-credentials{
+        label{display: inline}
+      }
+    }
+    .transfer-funds{
+      
+    }
+
+    /***** Contact Edit Page *****/
+    .contact-edit-card{
+      width:40vw;
+    }
+  }
+ }
+
+ @media screen and (min-width: 682px) {
+      /***** Contact Page *****/
+      .contact-list {
+        ul {
+          justify-content: space-around !important; //media(500px) overrides that...
+          li {width:300px !important} //media(500px) overrides that...
+        }
+      }
+ }
+
+ @media screen and (min-width: 1300px) {
+  /***** Contact Page *****/
+  .contact-list {
+    ul{
+      justify-content: space-between !important; //media(682px) overrides that...
+    }
+  }
+}
+
+
+
+
+
+
