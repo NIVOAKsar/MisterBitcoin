@@ -24,7 +24,6 @@ class ContactDetails extends Component {
     }
 
     transferFund = async (amount) => {
-        console.log(this.props.signedUser, 'before');
         await this.props.addMove(this.props.contact, amount);
     }
 
