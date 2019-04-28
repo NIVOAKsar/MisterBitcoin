@@ -2,7 +2,7 @@
   "name": "mister-bitcoin",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://NIVOAKsar.github.io/MisterBitcoin",
+  "homepage": "https://NIVOAKsar.github.io/MisterBitcoin-Redux",
   "dependencies": {
     "axios": "^0.18.0",
     "gh-pages": "^2.0.1",
