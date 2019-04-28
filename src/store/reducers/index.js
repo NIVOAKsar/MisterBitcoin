@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
-import signedUserReducer from './signedUserReducer';
+import userReducer from './userReducer';
 import contactReducer from './contactReducer';
 import contactsReducer from './contactsReducer';
 
 
 export default combineReducers({
-    signedUser: signedUserReducer,
+    signedUser: userReducer,
     contact: contactReducer,
     contacts: contactsReducer,
 });

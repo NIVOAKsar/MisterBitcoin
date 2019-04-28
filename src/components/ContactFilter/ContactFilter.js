@@ -1,18 +1,14 @@
 /***** REACT *****/
 import React, { Component } from 'react';
+
 class ContactFilter extends Component {
     state = {
-        filterBy: { term: '' },
-        filterFunc: null,
-    }
-
-    componentDidMount() {
-        this.setState({ filterFunc: this.props.filter })
-    }
+        filterBy: { term: '' }
+    };
 
     handleInput = (ev) => {
-        let filterBy = { term: ev.target.value }
-        this.state.filterFunc(filterBy);
+        let filterBy = { term: ev.target.value };
+        this.props.filter(filterBy);
     }
 
     render() {

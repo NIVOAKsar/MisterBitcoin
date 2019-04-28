@@ -10,25 +10,28 @@ body {
   background-image: url("./assets/black-theme.jpg");
 }
 
-/***** App *****/
+/***** App Page *****/
 .App {
     text-align: center;
     position: relative;
     color:white;
-    .hamburger{
+    .hamburger {
       position: fixed;
       left:0;
     } 
-    ul{
+
+    ul {
       list-style: none; 
     }
+    
     .link, .nav-link {
       text-decoration: none; 
       color:black; 
-  }
+    }
 }
 
 .main-nav {
+  z-index: 1;
   background-color:white;
   display: flex;  
   position: fixed;
@@ -78,8 +81,6 @@ body {
   }
 }
 
-
-
 /***** Home Page *****/
 .home-page {
   .home-card {
@@ -96,7 +97,6 @@ body {
    }
   }
 }
-
 
 /***** Contact Page *****/
 .contact-page{
@@ -133,7 +133,8 @@ body {
     li {width:100%}
   }
 }
-  .contact-preview {
+
+.contact-preview {
   background-color: rgb(58, 105, 87);
   display: flex;
   align-items: center;
@@ -161,8 +162,8 @@ body {
 
 /***** Contact Details Page *****/
 .contact-details {
-  img{ border-radius: 50% }
-  .contact-details-nav{
+  img { border-radius: 50% }
+  .contact-details-nav {
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -175,7 +176,7 @@ body {
     }
   }
 
-.contact-details-card {
+  .contact-details-card {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -221,6 +222,7 @@ body {
     }
   }
 }
+
 .move-container{
   background-color:rgb(90, 170, 170);
   .move-card{
@@ -228,7 +230,22 @@ body {
 }
 
 /***** Contact Edit Page *****/
-.contact-edit-card{
+.contact-edit {
+  .contact-details-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width:50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    img:hover {
+      transition: .3s;
+      transform: scale(1.2,1.2);
+    }
+  }
+}
+
+.contact-edit-card {
   width:80vw;
   margin:auto;
   display: flex;
@@ -272,6 +289,14 @@ body {
     .partial {
       display: inline-block;
     }
+
+    /***** Statistics Page *****/
+    .statistics {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     /***** Contact Page *****/
     .contact-list {
       ul{
@@ -279,6 +304,7 @@ body {
         li {width:400px}
       }
     }
+
     /***** Contact Details Page *****/
     .contact-details-card{
       flex-direction: row;
@@ -288,6 +314,7 @@ body {
         label{display: inline}
       }
     }
+
     .transfer-funds{
       
     }

@@ -8,9 +8,9 @@ import { AreaChart, XAxis, YAxis, CartesianGrid, Tooltip, ReferenceLine, Area } 
 const Chart = (props) => {
     const chartData = props.chartData.map(data => ({ 'Rate': data }));
     const fillColor = '#80dfff';
-    const strokeColor = '#5cd65c';
+    const strokeColor = '#8642f4';
     return (
-        <section className="chart-cmp">
+        <section className="chart">
             <h1>{props.chartName}</h1>
             <AreaChart
                 data={chartData}

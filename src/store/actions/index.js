@@ -4,7 +4,18 @@ import UserService from '../../services/UserService.js';
 import BitcoinService from '../../services/BitcoinService.js';
 import ContactService from '../../services/ContactService.js';
 
-// User Actions
+/***** BITCOIN ACTIONS *****/
+export const getRate = (coins) =>
+    async () => await BitcoinService.getRate(coins);
+
+export const getMarketPrice = () =>
+    async () => await BitcoinService.getMarketPrice();
+
+
+export const getConfirmedTransactions = () =>
+    async () => await BitcoinService.getConfirmedTransactions();
+
+/***** USER ACTIONS *****/
 export const signIn = () => async dispatch => {
     const response = await UserService.getUser();
     dispatch({ type: 'SIGN_IN', payload: response });
@@ -20,20 +31,7 @@ export const addMove = (target, amount) => async dispatch => {
     dispatch({ type: 'ADD_MOVE', payload: response });
 };
 
-// Bitcoin Actions
-export const getRate = (coins) => async dispatch => {
-    return await BitcoinService.getRate(coins);
-};
-
-export const getMarketPrice = () => async dispatch => {
-    return await BitcoinService.getMarketPrice();
-};
-
-export const getConfirmedTransactions = () => async dispatch => {
-    return await BitcoinService.getConfirmedTransactions();
-};
-
-// Contact Actions
+/***** CONTACT ACTIONS *****/
 export const fetchContact = (targetId) => async dispatch => {
     const response = await ContactService.getContactById(targetId);
     dispatch({ type: 'FETCH_CONTACT', payload: response });
@@ -53,7 +51,7 @@ export const saveContact = (contact) => async dispatch => {
     await ContactService.saveContact(contact);
 }
 
-export const getEmptyContact = () => {
+export const getEmptyContact = () => () => {
     return ContactService.getEmptyContact();
 }
 

@@ -1,19 +1,21 @@
 
 /***** REACT *****/
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 
 /***** STORE *****/
 import { connect } from 'react-redux';
-import { fetchContact, saveContact } from '../../store/actions';
+import { fetchContact, saveContact, getEmptyContact } from '../../store/actions';
+
+/***** IMGS *****/
+import backIcon from '../../assets/img/icons8-left-48.png';
+import editIcon from '../../assets/img/icons8-edit-48.png';
+import trashIcon from '../../assets/img/icons8-trash-48.png';
 class ContactEditPage extends Component {
 
     /***** DATA *****/
     state = {
-        contact: {
-            name: '',
-            email: '',
-            phone: ''
-        },
+        contact: this.props.getEmptyContact(),
         header: ''
     }
 
@@ -44,14 +46,17 @@ class ContactEditPage extends Component {
         else {
             this.setState({
                 header: 'Add Contact',
-                contact: this.props.getEmptyContact()
             });
         }
     }
     render() {
         return (
             <section className="contact-edit">
-                <h1>{this.state.header}</h1>
+                <nav className="contact-details-nav">
+                    <Link to={`/contact/${this.state.contact._id}`}>
+                        <img src={backIcon} alt="" />
+                    </Link>
+                </nav>
                 <div className="contact-edit-card">
                     <img src={this.state.contact && `https://robohash.org/sets=${this.state.contact._id}?size=100x100`} alt="" />
                     <form onSubmit={this.handleSubmit}>
@@ -74,7 +79,7 @@ const mapStateToProps = (state) => {
 
 
 export default connect(mapStateToProps,
-    { fetchContact, saveContact }
+    { fetchContact, saveContact, getEmptyContact }
 )(ContactEditPage);
 
 

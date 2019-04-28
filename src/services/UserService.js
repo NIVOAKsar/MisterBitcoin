@@ -14,14 +14,12 @@ function getEmptyUser() {
 async function getUser() {
     if (UtilService.loadFromStorage(USER_KEY));
     user = UtilService.loadFromStorage(USER_KEY);
-    // return JSON.parse(JSON.stringify(user));
     return user;
 }
 
 async function signUp(username) {
     user = _createUser(username);
     UtilService.saveToStorage(USER_KEY, user);
-    // return JSON.parse(JSON.stringify(user));
     return user;
 }
 
