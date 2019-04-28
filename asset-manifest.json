@@ -1,15 +1,15 @@
 {
-  "main.css": "/MisterBitcoin-Redux/static/css/main.617bbf67.chunk.css",
-  "main.js": "/MisterBitcoin-Redux/static/js/main.2ff4eca1.chunk.js",
-  "main.js.map": "/MisterBitcoin-Redux/static/js/main.2ff4eca1.chunk.js.map",
+  "main.css": "/MisterBitcoin-Redux/static/css/main.2516564b.chunk.css",
+  "main.js": "/MisterBitcoin-Redux/static/js/main.4aa0a9f3.chunk.js",
+  "main.js.map": "/MisterBitcoin-Redux/static/js/main.4aa0a9f3.chunk.js.map",
   "runtime~main.js": "/MisterBitcoin-Redux/static/js/runtime~main.7720c6f6.js",
   "runtime~main.js.map": "/MisterBitcoin-Redux/static/js/runtime~main.7720c6f6.js.map",
-  "static/js/2.536ddb06.chunk.js": "/MisterBitcoin-Redux/static/js/2.536ddb06.chunk.js",
-  "static/js/2.536ddb06.chunk.js.map": "/MisterBitcoin-Redux/static/js/2.536ddb06.chunk.js.map",
+  "static/js/2.f8f19a4a.chunk.js": "/MisterBitcoin-Redux/static/js/2.f8f19a4a.chunk.js",
+  "static/js/2.f8f19a4a.chunk.js.map": "/MisterBitcoin-Redux/static/js/2.f8f19a4a.chunk.js.map",
   "index.html": "/MisterBitcoin-Redux/index.html",
-  "precache-manifest.cb529eff4e435c82170198352061e7ac.js": "/MisterBitcoin-Redux/precache-manifest.cb529eff4e435c82170198352061e7ac.js",
+  "precache-manifest.3e70cad1b1ae74fe2b60e43404fc9983.js": "/MisterBitcoin-Redux/precache-manifest.3e70cad1b1ae74fe2b60e43404fc9983.js",
   "service-worker.js": "/MisterBitcoin-Redux/service-worker.js",
-  "static/css/main.617bbf67.chunk.css.map": "/MisterBitcoin-Redux/static/css/main.617bbf67.chunk.css.map",
+  "static/css/main.2516564b.chunk.css.map": "/MisterBitcoin-Redux/static/css/main.2516564b.chunk.css.map",
   "static/media/bitcoin.png": "/MisterBitcoin-Redux/static/media/bitcoin.e0cd4f88.png",
   "static/media/App.scss": "/MisterBitcoin-Redux/static/media/black-theme.b8dd2112.jpg"
 }

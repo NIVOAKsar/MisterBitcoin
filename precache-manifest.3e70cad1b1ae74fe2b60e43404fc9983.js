@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/MisterBitcoin-Redux/static/js/runtime~main.7720c6f6.js"
   },
   {
-    "revision": "35d851d423f9c3e17272",
-    "url": "/MisterBitcoin-Redux/static/js/main.2ff4eca1.chunk.js"
+    "revision": "bf19a7c2d7ccf7bd1f38",
+    "url": "/MisterBitcoin-Redux/static/js/main.4aa0a9f3.chunk.js"
   },
   {
-    "revision": "13dbe41e1161af16a455",
-    "url": "/MisterBitcoin-Redux/static/js/2.536ddb06.chunk.js"
+    "revision": "201855cb4958a6fdbd59",
+    "url": "/MisterBitcoin-Redux/static/js/2.f8f19a4a.chunk.js"
   },
   {
-    "revision": "35d851d423f9c3e17272",
-    "url": "/MisterBitcoin-Redux/static/css/main.617bbf67.chunk.css"
+    "revision": "bf19a7c2d7ccf7bd1f38",
+    "url": "/MisterBitcoin-Redux/static/css/main.2516564b.chunk.css"
   },
   {
-    "revision": "09a81f0c7235818f100122f3aabce243",
+    "revision": "339730ad5deb86c9c950f57648aaafc8",
     "url": "/MisterBitcoin-Redux/index.html"
   }
 ];
